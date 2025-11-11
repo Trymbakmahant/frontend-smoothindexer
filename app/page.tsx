@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { AnimatedWave } from '@/components/animated-wave';
 
 export default function Home() {
@@ -7,9 +8,13 @@ export default function Home() {
       <header className="sticky top-0 z-50 flex items-center justify-center py-3 px-4 sm:px-8 bg-white/80 dark:bg-background-dark/80 backdrop-blur-sm">
         <div className="flex items-center justify-center w-full max-w-6xl">
           <div className="flex items-center gap-4">
-            <svg className="h-8 w-8 text-primary" fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-              <path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z"></path>
-            </svg>
+            <Image 
+              src="/logo.png" 
+              alt="SmoothIndexer Logo" 
+              width={32} 
+              height={32}
+              className="h-8 w-8"
+            />
             <h2 className="text-xl font-bold">SmoothIndexer</h2>
           </div>
         </div>
@@ -164,9 +169,13 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-8 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex items-center gap-4">
-              <svg className="h-6 w-6 text-primary" fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                <path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z"></path>
-              </svg>
+              <Image 
+                src="/logo.png" 
+                alt="SmoothIndexer Logo" 
+                width={24} 
+                height={24}
+                className="h-6 w-6"
+              />
               <span className="text-sm text-text-light/70 dark:text-text-dark/70">© 2024 SmoothIndexer. All rights reserved.</span>
             </div>
             <div className="flex items-center gap-6">
