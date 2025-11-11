@@ -50,41 +50,42 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="features" className="py-16 md:py-24 bg-neutral-light/50 dark:bg-neutral-dark/20">
+        <section id="features" className="py-24 md:py-32 bg-background-light dark:bg-background-dark">
           <div className="container mx-auto px-4 sm:px-8">
-            <div className="flex flex-col gap-12">
-              <div className="max-w-2xl mx-auto text-center">
-                <h2 className="text-3xl md:text-4xl font-bold leading-tight tracking-tight">Powerful Features Built for Developers</h2>
-                <p className="mt-4 text-lg text-text-light/70 dark:text-text-dark/70">
-                  Our platform is packed with features designed to streamline your development workflow and deliver reliable, real-time data.
-                </p>
+            <div className="flex flex-col gap-16 md:gap-24">
+              <div className="mx-auto max-w-3xl text-center">
+                <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Powerful Features Built For Developers</h2>
+                <p className="mt-6 text-lg text-text-light/70 dark:text-text-dark/70">Our platform is packed with features designed to streamline your development workflow and deliver reliable, real-time data from the blockchain.</p>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="flex flex-col gap-4 rounded-xl border border-neutral-light dark:border-neutral-dark/50 bg-background-light dark:bg-neutral-dark p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-primary/20 text-primary-light">
-                    <span className="material-symbols-outlined text-3xl">bolt</span>
-                  </div>
-                  <div className="flex flex-col gap-1">
-                    <h3 className="text-xl font-bold">Real-time Indexing</h3>
-                    <p className="text-text-light/70 dark:text-text-dark/70">Access up-to-the-second data from multiple blockchains without delay.</p>
-                  </div>
-                </div>
-                <div className="flex flex-col gap-4 rounded-xl border border-neutral-light dark:border-neutral-dark/50 bg-background-light dark:bg-neutral-dark p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-primary/20 text-primary-light">
-                    <span className="material-symbols-outlined text-3xl">hub</span>
-                  </div>
-                  <div className="flex flex-col gap-1">
-                    <h3 className="text-xl font-bold">Multi-Chain Support</h3>
-                    <p className="text-text-light/70 dark:text-text-dark/70">Seamlessly integrate with Ethereum, Polygon, Solana, and more from a single point.</p>
+              <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <div className="relative overflow-hidden rounded-xl bg-white p-8 shadow-lg shadow-primary/5 dark:bg-neutral-dark">
+                  <div className="absolute -bottom-16 -right-16 h-40 w-40 rounded-full bg-gradient-to-tr from-primary/10 to-transparent dark:from-primary/20"></div>
+                  <div className="relative z-10 flex h-full flex-col gap-4">
+                    <div className="flex h-14 w-14 items-center justify-center rounded-lg bg-gradient-to-br from-primary-light to-primary-dark text-white shadow-md shadow-primary/30">
+                      <span className="material-symbols-outlined text-3xl">bolt</span>
+                    </div>
+                    <h3 className="text-2xl font-bold">Real-time Indexing</h3>
+                    <p className="text-text-light/70 dark:text-text-dark/70">Access up-to-the-second data from multiple blockchains without delay, ensuring your dApp is always in sync.</p>
                   </div>
                 </div>
-                <div className="flex flex-col gap-4 rounded-xl border border-neutral-light dark:border-neutral-dark/50 bg-background-light dark:bg-neutral-dark p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-primary/20 text-primary-light">
-                    <span className="material-symbols-outlined text-3xl">code</span>
+                <div className="relative overflow-hidden rounded-xl bg-white p-8 shadow-lg shadow-primary/5 dark:bg-neutral-dark">
+                  <div className="absolute -bottom-16 -right-16 h-40 w-40 rounded-full bg-gradient-to-tr from-primary/10 to-transparent dark:from-primary/20"></div>
+                  <div className="relative z-10 flex h-full flex-col gap-4">
+                    <div className="flex h-14 w-14 items-center justify-center rounded-lg bg-gradient-to-br from-primary-light to-primary-dark text-white shadow-md shadow-primary/30">
+                      <span className="material-symbols-outlined text-3xl">hub</span>
+                    </div>
+                    <h3 className="text-2xl font-bold">Multi-Chain Support</h3>
+                    <p className="text-text-light/70 dark:text-text-dark/70">Seamlessly integrate with Ethereum, Polygon, Solana, and more from a single, unified API endpoint.</p>
                   </div>
-                  <div className="flex flex-col gap-1">
-                    <h3 className="text-xl font-bold">Simple & Powerful API</h3>
-                    <p className="text-text-light/70 dark:text-text-dark/70">Get started in minutes with our developer-friendly GraphQL API and extensive documentation.</p>
+                </div>
+                <div className="relative overflow-hidden rounded-xl bg-white p-8 shadow-lg shadow-primary/5 dark:bg-neutral-dark">
+                  <div className="absolute -bottom-16 -right-16 h-40 w-40 rounded-full bg-gradient-to-tr from-primary/10 to-transparent dark:from-primary/20"></div>
+                  <div className="relative z-10 flex h-full flex-col gap-4">
+                    <div className="flex h-14 w-14 items-center justify-center rounded-lg bg-gradient-to-br from-primary-light to-primary-dark text-white shadow-md shadow-primary/30">
+                      <span className="material-symbols-outlined text-3xl">api</span>
+                    </div>
+                    <h3 className="text-2xl font-bold">GraphQL API</h3>
+                    <p className="text-text-light/70 dark:text-text-dark/70">Get started in minutes with our developer-friendly GraphQL API. Query exactly what you need, nothing more.</p>
                   </div>
                 </div>
               </div>
@@ -92,75 +93,104 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="pricing" className="py-16 md:py-24 bg-background-light dark:bg-background-dark">
+        <section className="relative py-24 sm:py-32 overflow-hidden bg-gradient-to-b from-blue-50/50 to-white dark:from-blue-900/10 dark:to-background-dark">
+          <div className="absolute top-0 left-0 right-0 h-96 bg-gradient-to-b from-blue-100/50 to-transparent dark:from-blue-900/20 dark:to-transparent opacity-50 -z-10"></div>
           <div className="container mx-auto px-4 sm:px-8">
-            <div className="max-w-2xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-bold leading-tight tracking-tight">Get Running in Minutes</h2>
+            <div className="max-w-3xl mx-auto text-center">
+              <h2 className="text-4xl md:text-5xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-dark">Get Running in Minutes</h2>
               <p className="mt-4 text-lg text-text-light/70 dark:text-text-dark/70">
-                Follow our simple three-step process to start querying blockchain data instantly.
+                It's as easy as dropping a shell in the ocean. Our streamlined process gets you from setup to querying in no time.
               </p>
             </div>
-            <div className="relative mt-16">
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
-                <div className="flex flex-col items-center text-center gap-4">
-                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 border-2 border-primary text-primary font-bold text-2xl">1</div>
-                  <h3 className="text-xl font-bold mt-2">Connect Your Source</h3>
-                  <p className="text-text-light/70 dark:text-text-dark/70">Link your dApp or data source to WaveIndex with just a few clicks.</p>
+            <div className="mt-16 max-w-4xl mx-auto">
+              <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
+                <div className="flex-1 flex flex-col gap-10">
+                  <div className="flex items-start gap-6">
+                    <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-primary-light to-primary-dark text-white font-bold text-xl shadow-lg shadow-primary/20">
+                      <span>1</span>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold">Upload Your ABI</h3>
+                      <p className="mt-1 text-text-light/70 dark:text-text-dark/70">Simply provide your contract's ABI. No complex configurations needed. Our system handles the rest.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-6">
+                    <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-primary-light to-primary-dark text-white font-bold text-xl shadow-lg shadow-primary/20">
+                      <span>2</span>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold">Sync Your Data</h3>
+                      <p className="mt-1 text-text-light/70 dark:text-text-dark/70">SmoothIndexer automatically syncs and indexes your contract events, providing real-time data access.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-6">
+                    <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-primary-light to-primary-dark text-white font-bold text-xl shadow-lg shadow-primary/20">
+                      <span>3</span>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold">Start Querying</h3>
+                      <p className="mt-1 text-text-light/70 dark:text-text-dark/70">Use our intuitive GraphQL API to start querying your indexed data immediately. It's that simple.</p>
+                    </div>
+                  </div>
                 </div>
-                <div className="flex flex-col items-center text-center gap-4">
-                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 border-2 border-primary text-primary font-bold text-2xl">2</div>
-                  <h3 className="text-xl font-bold mt-2">Define Your Schema</h3>
-                  <p className="text-text-light/70 dark:text-text-dark/70">Specify the data you need using our intuitive schema builder.</p>
-                </div>
-                <div className="flex flex-col items-center text-center gap-4">
-                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 border-2 border-primary text-primary font-bold text-2xl">3</div>
-                  <h3 className="text-xl font-bold mt-2">Query Your Data</h3>
-                  <p className="text-text-light/70 dark:text-text-dark/70">Instantly access real-time, structured data through our powerful API.</p>
+                <div className="flex-1 flex items-center justify-center p-8 bg-white/50 dark:bg-neutral-dark/30 rounded-2xl shadow-xl shadow-primary/10 backdrop-blur-lg border border-white/50 dark:border-neutral-dark/50">
+                  <div className="w-full h-80 rounded-lg bg-neutral-dark flex flex-col font-mono text-sm text-neutral-300 shadow-2xl">
+                    <div className="flex-shrink-0 p-3 bg-neutral-dark/80 rounded-t-lg flex items-center gap-2">
+                      <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                      <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                      <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                    </div>
+                    <div className="p-4 overflow-auto">
+                      <pre><code><span className="text-purple-400">query</span> <span className="text-yellow-300">MyQuery</span> {'{'}{'\n'}
+  <span className="text-blue-400">transfers</span>({'\n'}
+    <span className="text-red-400">orderBy</span>: <span className="text-green-400">blockTimestamp</span>,{'\n'}
+    <span className="text-red-400">orderDirection</span>: <span className="text-green-400">desc</span>{'\n'}
+  ) {'{'}{'\n'}
+    <span className="text-blue-400">id</span>{'\n'}
+    <span className="text-blue-400">from</span>{'\n'}
+    <span className="text-blue-400">to</span>{'\n'}
+    <span className="text-blue-400">value</span>{'\n'}
+  {'}'}{'\n'}
+{'}'}</code></pre>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="relative bg-blue-50/50 dark:bg-blue-900/10 pt-24 md:pt-32 pb-16 md:pb-24 overflow-hidden">
-          <div className="container mx-auto px-4 sm:px-8 relative z-10">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-6">
-                <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Fuel the Build ☕🌊</h2>
-                <p className="max-w-md text-lg text-text-light/70 dark:text-text-dark/70">
-                  If you're vibing with SmoothIndexer, buy me a coffee and keep the waves flowing.
-                </p>
-                <a className="inline-flex items-center justify-center h-14 px-8 bg-[#FFD966] text-gray-800 font-bold text-lg rounded-full shadow-lg shadow-yellow-500/20 hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105" href="#">
-                  Buy Me a Coffee
-                </a>
-              </div>
-              <div className="relative flex items-center justify-center h-64 lg:h-80">
-                <svg className="absolute w-full h-auto -bottom-16 md:-bottom-24 text-blue-200/50 dark:text-blue-500/10" fill="currentColor" viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 70C100 20, 200 100, 300 60C400 20, 400 80, 400 80V100H0V70Z"></path>
-                </svg>
-                <div className="relative w-48 h-48">
-                  <div className="absolute bottom-4 left-1/2 -translate-x-1/2 w-48 h-12 bg-white dark:bg-neutral-light/80 rounded-full shadow-lg rotate-[10deg]">
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-1.5 bg-red-400 rounded-full"></div>
-                  </div>
-                  <div className="absolute bottom-12 left-1/2 -translate-x-1/2 w-24 h-28 bg-gradient-to-b from-blue-400 to-primary-light rounded-t-[60px] rounded-b-[40px] shadow-md">
-                    <div className="absolute top-10 left-1/2 -translate-x-1/2 flex gap-3">
-                      <div className="w-4 h-4 bg-white rounded-full"></div>
-                      <div className="w-4 h-4 bg-white rounded-full"></div>
-                    </div>
-                    <div className="absolute top-8 -right-4 w-10 h-8 bg-amber-100 dark:bg-amber-200 rounded-lg rounded-br-2xl shadow-sm">
-                      <div className="absolute -right-3 top-1/2 -translate-y-1/2 w-5 h-5 border-2 border-amber-100 dark:border-amber-200 rounded-full"></div>
-                      <div className="absolute top-1 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-amber-700/50"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="absolute bottom-0 left-0 w-full h-20 bg-transparent">
-            <svg className="w-full h-full text-background-light dark:text-background-dark" fill="currentColor" preserveAspectRatio="none" viewBox="0 0 1440 100">
-              <path d="M0,50 C480,100 960,0 1440,50 L1440,100 L0,100 Z"></path>
+        <section className="relative bg-white dark:bg-background-dark pt-24 md:pt-32 pb-24 md:pb-32 overflow-hidden">
+          {/* Subtle wave divider in background */}
+          <div className="absolute inset-0 z-0 opacity-10">
+            <svg className="w-full h-full" fill="none" viewBox="0 0 1440 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0,100 C360,50 720,150 1080,100 C1260,75 1380,125 1440,100 L1440,200 L0,200 Z" fill="url(#wave-gradient-divider)" />
+              <defs>
+                <linearGradient id="wave-gradient-divider" x1="0" y1="0" x2="1440" y2="200">
+                  <stop offset="0%" stopColor="#0094FF" />
+                  <stop offset="100%" stopColor="#003E8F" />
+                </linearGradient>
+              </defs>
             </svg>
+        </div>
+
+          <div className="container mx-auto px-4 sm:px-8 relative z-10">
+            <div className="flex flex-col items-center text-center gap-8 max-w-2xl mx-auto">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-text-light dark:text-text-dark">
+                Follow the Build
+              </h2>
+              <p className="text-lg md:text-xl text-gray-600 dark:text-text-dark/70 leading-relaxed">
+                Stay updated with our latest progress, features, and updates as we build SmoothIndexer. Join our community and be part of the journey.
+              </p>
+              <a 
+                href="https://twitter.com/smoothindexer" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-8 py-4 bg-[#0094FF] text-white font-semibold text-base rounded-full shadow-lg shadow-[#0094FF]/30 hover:shadow-xl hover:shadow-[#0094FF]/40 transition-all duration-300 hover:scale-105"
+              >
+                Follow @smoothindexer
+              </a>
+            </div>
           </div>
         </section>
       </main>
@@ -184,7 +214,7 @@ export default function Home() {
               <a className="text-sm font-medium text-text-light/70 dark:text-text-dark/70 hover:text-primary transition-colors" href="#">Contact</a>
             </div>
           </div>
-        </div>
+          </div>
       </footer>
     </div>
   );
