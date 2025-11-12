@@ -30,7 +30,7 @@ export default function Home() {
               <div className="col-span-12 flex flex-col items-center justify-center lg:col-span-7">
                 <div className="flex max-w-xl flex-col items-center gap-6">
                   <h1 className="text-5xl font-black leading-tight tracking-tighter md:text-6xl lg:text-7xl">SmoothIndexer</h1>
-                  <p className="text-lg text-text-light/80 dark:text-text-dark/80 md:text-xl">Index EVM contracts with just an ABI.</p>
+                  <p className="text-lg text-text-light/80 dark:text-text-dark/80 md:text-xl">Generate Rust binary indexers for Foundry and Hardhat projects with just an ABI.</p>
                   <div className="mt-4 flex flex-col items-center gap-4 sm:flex-row">
                     <Link href="/abi-test" className="flex h-12 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full bg-gradient-to-br from-primary-light to-primary-dark px-6 text-base font-bold text-white shadow-lg shadow-primary/30 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-primary/40">
                       <span className="truncate">Follow the Build</span>
@@ -55,7 +55,7 @@ export default function Home() {
             <div className="flex flex-col gap-16 md:gap-24">
               <div className="mx-auto max-w-3xl text-center">
                 <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Powerful Features Built For Developers</h2>
-                <p className="mt-6 text-lg text-text-light/70 dark:text-text-dark/70">Our platform is packed with features designed to streamline your development workflow and deliver reliable, real-time data from the blockchain.</p>
+                <p className="mt-6 text-lg text-text-light/70 dark:text-text-dark/70">A powerful CLI tool that generates production-ready Rust binary indexers, designed for Foundry and Hardhat developers.</p>
               </div>
               <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
                 <div className="relative overflow-hidden rounded-xl bg-white p-8 shadow-lg shadow-primary/5 dark:bg-neutral-dark">
@@ -65,7 +65,7 @@ export default function Home() {
                       <span className="material-symbols-outlined text-3xl">bolt</span>
                     </div>
                     <h3 className="text-2xl font-bold">Real-time Indexing</h3>
-                    <p className="text-text-light/70 dark:text-text-dark/70">Access up-to-the-second data from multiple blockchains without delay, ensuring your dApp is always in sync.</p>
+                    <p className="text-text-light/70 dark:text-text-dark/70">The generated Rust indexer syncs up-to-the-second data from multiple blockchains, ensuring your dApp is always in sync.</p>
                   </div>
                 </div>
                 <div className="relative overflow-hidden rounded-xl bg-white p-8 shadow-lg shadow-primary/5 dark:bg-neutral-dark">
@@ -75,7 +75,7 @@ export default function Home() {
                       <span className="material-symbols-outlined text-3xl">hub</span>
                     </div>
                     <h3 className="text-2xl font-bold">Multi-Chain Support</h3>
-                    <p className="text-text-light/70 dark:text-text-dark/70">Seamlessly integrate with Ethereum, Polygon, Solana, and more from a single, unified API endpoint.</p>
+                    <p className="text-text-light/70 dark:text-text-dark/70">Seamlessly integrate with Ethereum, Polygon, and more from a single, unified API endpoint.</p>
                   </div>
                 </div>
                 <div className="relative overflow-hidden rounded-xl bg-white p-8 shadow-lg shadow-primary/5 dark:bg-neutral-dark">
@@ -84,8 +84,8 @@ export default function Home() {
                     <div className="flex h-14 w-14 items-center justify-center rounded-lg bg-gradient-to-br from-primary-light to-primary-dark text-white shadow-md shadow-primary/30">
                       <span className="material-symbols-outlined text-3xl">api</span>
                     </div>
-                    <h3 className="text-2xl font-bold">GraphQL API</h3>
-                    <p className="text-text-light/70 dark:text-text-dark/70">Get started in minutes with our developer-friendly GraphQL API. Query exactly what you need, nothing more.</p>
+                    <h3 className="text-2xl font-bold">Rust Binary Generator</h3>
+                    <p className="text-text-light/70 dark:text-text-dark/70">Generate production-ready Rust binary indexers from your ABI. Fast, efficient, and fully customizable.</p>
                   </div>
                 </div>
               </div>
@@ -99,7 +99,7 @@ export default function Home() {
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-4xl md:text-5xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-dark">Get Running in Minutes</h2>
               <p className="mt-4 text-lg text-text-light/70 dark:text-text-dark/70">
-                It's as easy as dropping a shell in the ocean. Our streamlined process gets you from setup to querying in no time.
+                A CLI tool that generates Rust binary indexers for Foundry and Hardhat developers. Just provide your ABI, RPC endpoint, and PostgreSQL database.
               </p>
             </div>
             <div className="mt-16 max-w-4xl mx-auto">
@@ -110,8 +110,8 @@ export default function Home() {
                       <span>1</span>
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold">Upload Your ABI</h3>
-                      <p className="mt-1 text-text-light/70 dark:text-text-dark/70">Simply provide your contract's ABI. No complex configurations needed. Our system handles the rest.</p>
+                      <h3 className="text-xl font-bold">Provide Your ABI</h3>
+                      <p className="mt-1 text-text-light/70 dark:text-text-dark/70">Simply provide your contract's ABI. Our CLI tool analyzes it and generates the indexer code structure.</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-6">
@@ -119,8 +119,8 @@ export default function Home() {
                       <span>2</span>
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold">Sync Your Data</h3>
-                      <p className="mt-1 text-text-light/70 dark:text-text-dark/70">SmoothIndexer automatically syncs and indexes your contract events, providing real-time data access.</p>
+                      <h3 className="text-xl font-bold">Configure RPC & Database</h3>
+                      <p className="mt-1 text-text-light/70 dark:text-text-dark/70">Provide your RPC endpoint and PostgreSQL database connection. The generated indexer will use these to sync and store data.</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-6">
@@ -128,8 +128,8 @@ export default function Home() {
                       <span>3</span>
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold">Start Querying</h3>
-                      <p className="mt-1 text-text-light/70 dark:text-text-dark/70">Use our intuitive GraphQL API to start querying your indexed data immediately. It's that simple.</p>
+                      <h3 className="text-xl font-bold">Generate & Deploy</h3>
+                      <p className="mt-1 text-text-light/70 dark:text-text-dark/70">Get your Rust binary indexer code, build it, and deploy. You own the code and infrastructure.</p>
                     </div>
                   </div>
                 </div>
@@ -141,17 +141,13 @@ export default function Home() {
                       <div className="w-3 h-3 rounded-full bg-green-500"></div>
                     </div>
                     <div className="p-4 overflow-auto">
-                      <pre><code><span className="text-purple-400">query</span> <span className="text-yellow-300">MyQuery</span> {'{'}{'\n'}
-  <span className="text-blue-400">transfers</span>({'\n'}
-    <span className="text-red-400">orderBy</span>: <span className="text-green-400">blockTimestamp</span>,{'\n'}
-    <span className="text-red-400">orderDirection</span>: <span className="text-green-400">desc</span>{'\n'}
-  ) {'{'}{'\n'}
-    <span className="text-blue-400">id</span>{'\n'}
-    <span className="text-blue-400">from</span>{'\n'}
-    <span className="text-blue-400">to</span>{'\n'}
-    <span className="text-blue-400">value</span>{'\n'}
-  {'}'}{'\n'}
-{'}'}</code></pre>
+                      <pre><code><span className="text-green-400">$</span> <span className="text-blue-400">smoothindexer</span> <span className="text-yellow-300">generate</span>{'\n'}
+  <span className="text-purple-400">--abi</span> <span className="text-neutral-300">./artifacts/MyContract.json</span>{'\n'}
+  <span className="text-purple-400">--rpc</span> <span className="text-neutral-300">https://eth.llamarpc.com</span>{'\n'}
+  <span className="text-purple-400">--db</span> <span className="text-neutral-300">postgres://user:pass@localhost/db</span>{'\n'}
+{'\n'}
+<span className="text-green-400">✓</span> <span className="text-neutral-300">Generated Rust indexer</span>{'\n'}
+<span className="text-green-400">✓</span> <span className="text-neutral-300">Ready to build and deploy</span></code></pre>
                     </div>
                   </div>
                 </div>
